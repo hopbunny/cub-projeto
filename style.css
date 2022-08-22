@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    background-color: rgb(34, 34, 34);
+    padding-inline: 5rem;
+    color: white;
+    height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex; 
+}
+
+.navbar .title {
+    display: flex;
+}
+
+.navbar .name {
+    margin-left: 10px;
+}
+
+.navbar .title img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar li {
+    margin: 20px 0 10px 2rem;
+    display:inline-flex;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    transition: 0.3s all;
+    color: #eb0096;
+}
+
+#contato-btn {
+    border: 2px solid #eb0096;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#contato-btn:hover {
+    background-color: #eb0096;
+    color: white;
+}
+
+
+/* BODY */
+
+.index {
+    background: linear-gradient(-45deg, #00abff, #eb0096, #ffe400);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    border-radius: 5px;
+    padding: 3px;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background {
+    background-color: rgb(34, 34, 34);
+    border-radius: 3px;
+    display: flex;
+}
+
+.index .main{
+    padding: 10px;
+    width: 45%;
+}
+
+.index .main h2 {
+    text-align: center;
+    line-height: 100%;
+    font-size: 3rem;   
+}
+
+.index .main p {
+    text-align: justify;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.index .main h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.index .image {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    width: 55%;
+}
+
+.index .image img {
+    height: 500px;
+    width: 530px;
+}
